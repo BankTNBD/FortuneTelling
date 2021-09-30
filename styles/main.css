@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Prompt;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Prompt;
+	background: linear-gradient(-45deg, #355070, #6d597a, #b56576, #eaac8b);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.headerText .creditText {
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+  font-size: xx-large;
+}
+
+.contentBox {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.contentBox .prophesyBox {
+  width: 20%;
+  height: 80%;
+  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  min-width: 200px
+}
+
+.contentBox .prophesyBox .prophesy {
+  width: 100%;
+  height: 80%;
+  margin: 20px;
+  background-color: white;
+  text-align: center;
+  font-size: x-large;
+}
+
+.contentBox .prophesyBox .emoji {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  font-size: xx-large;
+}
+
+.description {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: x-large;
+  color: #fff;
+}
+
+.nameInput {
+  width: 20%;
+  min-width: 200px;
+  height: 30px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+
+.actions {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.actions p {
+  box-shadow: 0 10 25px -10px rgba(0, 0, 0, 0.3);
+  padding: 12px 60px;
+  background-color: #212121;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 25px;
+}
+
+.actions button {
+  box-shadow: 0 10 25px -10px rgba(0, 0, 0, 0.3);
+  padding: 12px 60px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: #dee1dd solid 1px;
+  font-size: large;
+  color: #dee1dd;
+  margin: 0 25px;
+  transition: 0.3s;
+}
+
+.actions button:hover {
+  background-color: rgba(246, 246, 246, 0.5);
+  color: #212121;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
